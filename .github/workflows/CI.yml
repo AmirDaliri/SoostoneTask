@@ -8,29 +8,33 @@ on:
 
 env:
   SCHEME: SoostoneTask
-  TEST_DEVICE: platform=iOS Simulator,name=iPhone 14,OS=16.2
+  TEST_DEVICE: platform=iOS Simulator,name=iPhone 13,OS=15.2 # Adjust this based on available simulators
 
 jobs:
+  list-simulators:
+    runs-on: macos-latest
+    steps:
+    - name: List available simulators
+      run: xcrun simctl list devices
+
   build:
     runs-on: macos-latest
     timeout-minutes: 30
-
+    needs: list-simulators
     steps:
     - name: Checkout project repo
       uses: actions/checkout@v4
 
     - name: Build
-      shell: bash
       run: xcodebuild -scheme '${{ env.SCHEME }}' -sdk iphonesimulator -destination '${{ env.TEST_DEVICE }}' build
 
   test:
     runs-on: macos-latest
     timeout-minutes: 30
-
+    needs: build
     steps:
     - name: Checkout project repo
       uses: actions/checkout@v4
 
     - name: Test
-      shell: bash
       run: xcodebuild -scheme '${{ env.SCHEME }}' -sdk iphonesimulator -destination '${{ env.TEST_DEVICE }}' test
