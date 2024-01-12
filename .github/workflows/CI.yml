@@ -27,4 +27,5 @@ jobs:
       run: xcodebuild build -project SoostoneTask.xcodeproj -scheme SoostoneTask -sdk iphonesimulator -configuration ${{ matrix.configuration }}
 
     - name: Test
-      run: xcodebuild test -project SoostoneTask.xcodeproj -scheme SoostoneTask -sdk iphonesimulator -configuration ${{ matrix.configuration }} -destination 'platform=iOS Simulator,name=iPhone 14'
+      run: xcodebuild test -project SoostoneTask.xcodeproj -scheme SoostoneTask -sdk iphonesimulator -configuration ${{ matrix.configuration }} -destination 'platform=iOS Simulator,id=5A0F0814-C78C-4F3A-AED3-B83DCC3746C1'
+
