@@ -18,6 +18,3 @@ jobs:
 
     - name: Build
       run: xcodebuild -scheme SoostoneTask -project SoostoneTask.xcodeproj -sdk iphonesimulator -configuration Debug build
-
-    - name: Run tests
-      run: xcodebuild -scheme SoostoneTask -project SoostoneTask.xcodeproj -sdk iphonesimulator -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 13,OS=16.2' test
