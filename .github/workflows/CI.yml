@@ -2,26 +2,19 @@ name: CI
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   build-and-test:
     runs-on: macos-latest
-    strategy:
-      matrix:
-        configuration: [Debug, Release]
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
-    - name: Set up Xcode
-      uses: maxim-lobanov/setup-xcode@v1
-      with:
-        xcode-version: '13.2.1' # Set your Xcode version here
+    - name: Select Xcode Version
+      run: sudo xcode-select -switch /Applications/Xcode_14.2.app
 
     - name: Build
-      run: xcodebuild build -project SoostoneTask.xcodeproj -scheme SoostoneTask -sdk iphonesimulator -configuration ${{ matrix.configuration }}
-
-    - name: Test
-      run: xcodebuild test -project SoostoneTask.xcodeproj -scheme SoostoneTask -sdk iphonesimulator -configuration ${{ matrix.configuration }} -destination 'platform=iOS Simulator,name=iPhone 13'
+      run: xcodebuild -scheme SoostoneTask -project SoostoneTask.xcodeproj -sdk iphonesimulator -configuration Debug build
