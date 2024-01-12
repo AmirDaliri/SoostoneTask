@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		8B2AABFC2B51E4AB002540B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AABFB2B51E4AB002540B5 /* AppDelegate.swift */; };
 		8B2AABFE2B51E4AB002540B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AABFD2B51E4AB002540B5 /* SceneDelegate.swift */; };
-		8B2AAC002B51E4AB002540B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AABFF2B51E4AB002540B5 /* ViewController.swift */; };
-		8B2AAC032B51E4AB002540B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B2AAC012B51E4AB002540B5 /* Main.storyboard */; };
 		8B2AAC052B51E4AC002540B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B2AAC042B51E4AC002540B5 /* Assets.xcassets */; };
 		8B2AAC082B51E4AC002540B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B2AAC062B51E4AC002540B5 /* LaunchScreen.storyboard */; };
 		8B2AAC132B51E4AD002540B5 /* SoostoneTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AAC122B51E4AD002540B5 /* SoostoneTaskTests.swift */; };
 		8B2AAC1D2B51E4AD002540B5 /* SoostoneTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AAC1C2B51E4AD002540B5 /* SoostoneTaskUITests.swift */; };
 		8B2AAC1F2B51E4AD002540B5 /* SoostoneTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AAC1E2B51E4AD002540B5 /* SoostoneTaskUITestsLaunchTests.swift */; };
+		8B2AAC2D2B51F1BE002540B5 /* PokemonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AAC2B2B51F1BE002540B5 /* PokemonsViewController.swift */; };
+		8B2AAC2E2B51F1BE002540B5 /* PokemonsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B2AAC2C2B51F1BE002540B5 /* PokemonsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,6 @@
 		8B2AABF82B51E4AB002540B5 /* SoostoneTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoostoneTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B2AABFB2B51E4AB002540B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B2AABFD2B51E4AB002540B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8B2AABFF2B51E4AB002540B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8B2AAC022B51E4AB002540B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B2AAC042B51E4AC002540B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B2AAC072B51E4AC002540B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B2AAC092B51E4AC002540B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		8B2AAC182B51E4AD002540B5 /* SoostoneTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoostoneTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B2AAC1C2B51E4AD002540B5 /* SoostoneTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoostoneTaskUITests.swift; sourceTree = "<group>"; };
 		8B2AAC1E2B51E4AD002540B5 /* SoostoneTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoostoneTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8B2AAC2B2B51F1BE002540B5 /* PokemonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonsViewController.swift; sourceTree = "<group>"; };
+		8B2AAC2C2B51F1BE002540B5 /* PokemonsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokemonsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +101,8 @@
 			children = (
 				8B2AABFB2B51E4AB002540B5 /* AppDelegate.swift */,
 				8B2AABFD2B51E4AB002540B5 /* SceneDelegate.swift */,
-				8B2AABFF2B51E4AB002540B5 /* ViewController.swift */,
-				8B2AAC012B51E4AB002540B5 /* Main.storyboard */,
+				8B2AAC2B2B51F1BE002540B5 /* PokemonsViewController.swift */,
+				8B2AAC2C2B51F1BE002540B5 /* PokemonsViewController.xib */,
 				8B2AAC042B51E4AC002540B5 /* Assets.xcassets */,
 				8B2AAC062B51E4AC002540B5 /* LaunchScreen.storyboard */,
 				8B2AAC092B51E4AC002540B5 /* Info.plist */,
@@ -232,8 +232,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B2AAC082B51E4AC002540B5 /* LaunchScreen.storyboard in Resources */,
+				8B2AAC2E2B51F1BE002540B5 /* PokemonsViewController.xib in Resources */,
 				8B2AAC052B51E4AC002540B5 /* Assets.xcassets in Resources */,
-				8B2AAC032B51E4AB002540B5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B2AAC002B51E4AB002540B5 /* ViewController.swift in Sources */,
+				8B2AAC2D2B51F1BE002540B5 /* PokemonsViewController.swift in Sources */,
 				8B2AABFC2B51E4AB002540B5 /* AppDelegate.swift in Sources */,
 				8B2AABFE2B51E4AB002540B5 /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +297,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8B2AAC012B51E4AB002540B5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8B2AAC022B51E4AB002540B5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8B2AAC062B51E4AC002540B5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -447,7 +439,6 @@
 				INFOPLIST_FILE = SoostoneTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -475,7 +466,6 @@
 				INFOPLIST_FILE = SoostoneTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
