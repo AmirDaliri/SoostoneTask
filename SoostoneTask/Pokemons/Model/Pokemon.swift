@@ -20,7 +20,7 @@ struct Pokemon: Codable {
 
     enum CodingKeys: String, CodingKey {
         case id, name, description
-        case imageURL
+        case imageURL = "imageUrl"
     }
 }
 

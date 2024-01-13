@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="89" id="KGk-i7-Jjw" customClass="PokemonTableViewCell" customModule="SoostoneTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokemon_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="m2u-JH-I4U">
+                        <rect key="frame" x="8" y="8" width="70" height="73"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="oHR-vx-0UE"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eTe-Pr-5qO">
+                        <rect key="frame" x="94" y="8" width="210" height="57"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zjm-Nj-Fod">
+                                <rect key="frame" x="0.0" y="0.0" width="210" height="33.666666666666664"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8X-WZ-ep3">
+                                <rect key="frame" x="0.0" y="41.666666666666664" width="210" height="15.333333333333336"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="eTe-Pr-5qO" secondAttribute="bottom" constant="24" id="3Lx-cB-9G5"/>
+                    <constraint firstItem="eTe-Pr-5qO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="3YT-6h-Q17"/>
+                    <constraint firstItem="eTe-Pr-5qO" firstAttribute="leading" secondItem="m2u-JH-I4U" secondAttribute="trailing" constant="16" id="FuT-wy-oXv"/>
+                    <constraint firstItem="m2u-JH-I4U" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="VJf-JJ-3fJ"/>
+                    <constraint firstAttribute="trailing" secondItem="eTe-Pr-5qO" secondAttribute="trailing" constant="16" id="WHL-cY-pc1"/>
+                    <constraint firstItem="m2u-JH-I4U" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="jkp-V3-JwG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="pokemonDescriptionLabel" destination="z8X-WZ-ep3" id="ZIP-yJ-MH6"/>
+                <outlet property="pokemonImageView" destination="m2u-JH-I4U" id="ITR-cf-pRl"/>
+                <outlet property="pokemonNameLabel" destination="Zjm-Nj-Fod" id="vbl-YR-Mbb"/>
+            </connections>
+            <point key="canvasLocation" x="138.93129770992365" y="35.563380281690144"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pokemon_placeholder" width="70" height="73"/>
+    </resources>
+</document>
