@@ -23,6 +23,9 @@
 		8B2AAC382B51F30F002540B5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AAC372B51F30F002540B5 /* NetworkManager.swift */; };
 		8B2AAC3A2B51F39F002540B5 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AAC392B51F39F002540B5 /* Pokemon.swift */; };
 		8B2AAC3C2B51F403002540B5 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AAC3B2B51F403002540B5 /* ErrorResponse.swift */; };
+		8B2AAC3F2B51F5C2002540B5 /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AAC3E2B51F5C2002540B5 /* MockNetworkService.swift */; };
+		8B2AAC412B51F92D002540B5 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AAC402B51F92D002540B5 /* NetworkManagerTests.swift */; };
+		8B2AAC432B51FB26002540B5 /* TestUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AAC422B51FB26002540B5 /* TestUtilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		8B2AAC372B51F30F002540B5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		8B2AAC392B51F39F002540B5 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		8B2AAC3B2B51F403002540B5 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		8B2AAC3E2B51F5C2002540B5 /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
+		8B2AAC402B51F92D002540B5 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		8B2AAC422B51FB26002540B5 /* TestUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +137,9 @@
 			isa = PBXGroup;
 			children = (
 				8B2AAC122B51E4AD002540B5 /* SoostoneTaskTests.swift */,
+				8B2AAC422B51FB26002540B5 /* TestUtilities.swift */,
+				8B2AAC3E2B51F5C2002540B5 /* MockNetworkService.swift */,
+				8B2AAC402B51F92D002540B5 /* NetworkManagerTests.swift */,
 			);
 			path = SoostoneTaskTests;
 			sourceTree = "<group>";
@@ -304,6 +313,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B2AAC412B51F92D002540B5 /* NetworkManagerTests.swift in Sources */,
+				8B2AAC3F2B51F5C2002540B5 /* MockNetworkService.swift in Sources */,
+				8B2AAC432B51FB26002540B5 /* TestUtilities.swift in Sources */,
 				8B2AAC132B51E4AD002540B5 /* SoostoneTaskTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
