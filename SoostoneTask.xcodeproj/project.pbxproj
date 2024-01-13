@@ -34,6 +34,7 @@
 		8B2AAC5B2B52A839002540B5 /* PokemonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AAC592B52A839002540B5 /* PokemonsViewController.swift */; };
 		8B2AAC5C2B52A839002540B5 /* PokemonsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B2AAC5A2B52A839002540B5 /* PokemonsViewController.xib */; };
 		8B2AAC5E2B5344B6002540B5 /* PullToRefreshable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AAC5D2B5344B6002540B5 /* PullToRefreshable.swift */; };
+		8B2AAC602B534763002540B5 /* PokemonsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AAC5F2B534763002540B5 /* PokemonsViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		8B2AAC592B52A839002540B5 /* PokemonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonsViewController.swift; sourceTree = "<group>"; };
 		8B2AAC5A2B52A839002540B5 /* PokemonsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokemonsViewController.xib; sourceTree = "<group>"; };
 		8B2AAC5D2B5344B6002540B5 /* PullToRefreshable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefreshable.swift; sourceTree = "<group>"; };
+		8B2AAC5F2B534763002540B5 /* PokemonsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonsViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,10 +152,9 @@
 		8B2AAC112B51E4AD002540B5 /* SoostoneTaskTests */ = {
 			isa = PBXGroup;
 			children = (
-				8B2AAC122B51E4AD002540B5 /* SoostoneTaskTests.swift */,
-				8B2AAC422B51FB26002540B5 /* TestUtilities.swift */,
-				8B2AAC3E2B51F5C2002540B5 /* MockNetworkService.swift */,
-				8B2AAC402B51F92D002540B5 /* NetworkManagerTests.swift */,
+				8B2AAC612B534924002540B5 /* Helpers */,
+				8B2AAC622B53493D002540B5 /* Networking Tests */,
+				8B2AAC632B534957002540B5 /* ViewModel Tests */,
 			);
 			path = SoostoneTaskTests;
 			sourceTree = "<group>";
@@ -243,6 +244,32 @@
 				8B2AAC4B2B52A634002540B5 /* PokemonTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		8B2AAC612B534924002540B5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8B2AAC122B51E4AD002540B5 /* SoostoneTaskTests.swift */,
+				8B2AAC422B51FB26002540B5 /* TestUtilities.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8B2AAC622B53493D002540B5 /* Networking Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8B2AAC3E2B51F5C2002540B5 /* MockNetworkService.swift */,
+				8B2AAC402B51F92D002540B5 /* NetworkManagerTests.swift */,
+			);
+			path = "Networking Tests";
+			sourceTree = "<group>";
+		};
+		8B2AAC632B534957002540B5 /* ViewModel Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8B2AAC5F2B534763002540B5 /* PokemonsViewModelTests.swift */,
+			);
+			path = "ViewModel Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,6 +432,7 @@
 				8B2AAC3F2B51F5C2002540B5 /* MockNetworkService.swift in Sources */,
 				8B2AAC432B51FB26002540B5 /* TestUtilities.swift in Sources */,
 				8B2AAC132B51E4AD002540B5 /* SoostoneTaskTests.swift in Sources */,
+				8B2AAC602B534763002540B5 /* PokemonsViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,7 +13,7 @@
 import Foundation
 
 // MARK: - Pokemon
-struct Pokemon: Codable {
+struct Pokemon: Codable, Equatable {
     let id: Int?
     let name, description: String?
     let imageURL: String?
