@@ -35,6 +35,7 @@
 		8B2AAC5C2B52A839002540B5 /* PokemonsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B2AAC5A2B52A839002540B5 /* PokemonsViewController.xib */; };
 		8B2AAC5E2B5344B6002540B5 /* PullToRefreshable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AAC5D2B5344B6002540B5 /* PullToRefreshable.swift */; };
 		8B2AAC602B534763002540B5 /* PokemonsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AAC5F2B534763002540B5 /* PokemonsViewModelTests.swift */; };
+		8B2AAC652B5349CD002540B5 /* PokemonsViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AAC642B5349CD002540B5 /* PokemonsViewControllerUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		8B2AAC5A2B52A839002540B5 /* PokemonsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokemonsViewController.xib; sourceTree = "<group>"; };
 		8B2AAC5D2B5344B6002540B5 /* PullToRefreshable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefreshable.swift; sourceTree = "<group>"; };
 		8B2AAC5F2B534763002540B5 /* PokemonsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonsViewModelTests.swift; sourceTree = "<group>"; };
+		8B2AAC642B5349CD002540B5 /* PokemonsViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonsViewControllerUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 			children = (
 				8B2AAC1C2B51E4AD002540B5 /* SoostoneTaskUITests.swift */,
 				8B2AAC1E2B51E4AD002540B5 /* SoostoneTaskUITestsLaunchTests.swift */,
+				8B2AAC642B5349CD002540B5 /* PokemonsViewControllerUITests.swift */,
 			);
 			path = SoostoneTaskUITests;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 			files = (
 				8B2AAC1D2B51E4AD002540B5 /* SoostoneTaskUITests.swift in Sources */,
 				8B2AAC1F2B51E4AD002540B5 /* SoostoneTaskUITestsLaunchTests.swift in Sources */,
+				8B2AAC652B5349CD002540B5 /* PokemonsViewControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
