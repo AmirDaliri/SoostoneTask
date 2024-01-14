@@ -12,6 +12,13 @@ App Scenes
   <img src="https://raw.githubusercontent.com/AmirDaliri/Resume/master/Screenshot%202024-01-14%20at%2022.25.19.png" width="300" height="600">
 </details>
 
+<details>
+  <summary>UI & Unit Testing</summary>
+  <img src="https://raw.githubusercontent.com/AmirDaliri/Resume/master/Screenshot%202024-01-14%20at%2023.18.43.png" width="300" height="600">
+</details>
+
+
+
 **Assignment Requirements:**
 - Created the app using Swift.
 - Network layer using URLSession (no 3rd party frameworks).
