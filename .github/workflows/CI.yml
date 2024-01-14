@@ -13,8 +13,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Select Xcode Version
-      run: sudo xcode-select -switch /Applications/Xcode_14.2.app
-
     - name: Build
       run: xcodebuild -scheme SoostoneTask -project SoostoneTask.xcodeproj -sdk iphonesimulator -configuration Debug build
+
+    - name: Run tests
+      run: xcodebuild -scheme SoostoneTask -project SoostoneTask.xcodeproj -sdk iphonesimulator -configuration Debug test
