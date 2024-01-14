@@ -23,4 +23,9 @@ class PokemonTableViewCell: UITableViewCell {
         pokemonNameLabel.text = pokemon.name
         pokemonDescriptionLabel.text = pokemon.description
     }
+    
+    // Expose the image for external access
+    func getPokemonImage() -> UIImage {
+        return pokemonImageView.image ?? #imageLiteral(resourceName: "pokemon_placeholder")
+    }
 }

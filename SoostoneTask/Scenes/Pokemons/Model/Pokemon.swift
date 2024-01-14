@@ -10,7 +10,7 @@
 //
 //   let pokemons = try Pokemons(json)
 
-import Foundation
+import UIKit
 
 // MARK: - Pokemon
 struct Pokemon: Codable, Equatable {
@@ -62,6 +62,10 @@ extension Pokemon {
 
     func jsonString(encoding: String.Encoding = .utf8) throws -> String? {
         return String(data: try self.jsonData(), encoding: encoding)
+    }
+    
+    func toPokemonUIModel(image: UIImage) -> PokemonUIModel {
+        PokemonUIModel.init(id: self.id ?? 01, name: self.name ?? "", description: self.description ?? "", image: image)
     }
 }
 

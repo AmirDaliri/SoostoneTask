@@ -7,18 +7,17 @@
 
 import UIKit
 import Combine
+import SwiftUI
 
 class PokemonsViewController: UIViewController, Loading {
     
     @IBOutlet private weak var tableView: UITableView!
     
-
     private var viewModel: PokemonsViewModel
     private var cancellables = Set<AnyCancellable>()
     private var pullToRefreshComponent: PullToRefreshComponent?
     var spinner: UIView?
     
-    // UI Components (e.g., UITableView, UICollectionView, etc.)
     init(viewModel: PokemonsViewModel = PokemonsViewModel()) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -35,7 +34,6 @@ class PokemonsViewController: UIViewController, Loading {
         
         self.title = "Pokemons"
         setupTableView()
-        viewModel = PokemonsViewModel()
         bindViewModel()
         viewModel.loadPokemons()
         
@@ -72,13 +70,9 @@ class PokemonsViewController: UIViewController, Loading {
     }
 
     @objc func refreshData() {
-        // Your refresh logic here
-        
-        // After refreshing, don't forget to end refreshing
         pullToRefreshComponent?.endRefreshing()
     }
 
-    
     private func handleNetworkError(_ error: NetworkError) {
         // Handle the error, e.g., show an alert
         let message = determineErrorMessage(for: error)
@@ -101,6 +95,23 @@ class PokemonsViewController: UIViewController, Loading {
             return message
         }
     }
+    
+    private func navigateToPokemonView(with pokemon: Pokemon, tableView: UITableView, indexPath: IndexPath) {
+        // Get the selected cell
+        if let cell = tableView.cellForRow(at: indexPath) as? PokemonTableViewCell {
+            
+            // Retrieve the UIImage from the UIImageView
+            let selectedImage = cell.getPokemonImage()
+            
+            // Pass the selected UIImage to the detail view
+            let selectedPokemon = pokemon.toPokemonUIModel(image: selectedImage)
+            let detailView = PokemonView(viewModel: PokemonViewModel.init(pokemon: selectedPokemon))
+            
+            // Use SwiftUI NavigationLink to navigate to the detail view
+            let detailHostingController = UIHostingController(rootView: detailView)
+            navigationController?.pushViewController(detailHostingController, animated: true)
+        }
+    }
 }
 
 // MARK: - Table Delegate Datasource
@@ -115,6 +126,13 @@ extension PokemonsViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedPokemon = viewModel.pokemons[indexPath.row]
+        DispatchQueue.main.async {
+            self.navigateToPokemonView(with: selectedPokemon, tableView: tableView, indexPath: indexPath)
+        }
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         UITableView.automaticDimension
     }

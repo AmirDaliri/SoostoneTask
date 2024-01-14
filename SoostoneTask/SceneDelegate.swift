@@ -26,7 +26,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         let navigationController = UINavigationController(rootViewController: PokemonsViewController())
         // Set the navigation bar's large title appearance
-        navigationController.navigationBar.prefersLargeTitles = true
+//        navigationController.navigationBar.prefersLargeTitles = true
         navigationController.navigationBar.largeTitleTextAttributes = [
             NSAttributedString.Key.foregroundColor: UIColor.black
         ]
